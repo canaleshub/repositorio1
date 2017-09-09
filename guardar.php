@@ -1,12 +1,11 @@
 <?php
 //conectamos Con el servidor
-$conectar=@mysql_connect('localhost','root','');
+$conectar=@mysql_connect('localhost:3306','root','$12345678');
 //verificamos la conexion
 if(!$conectar){
 echo"No Se Pudo Conectar Con El Servidor";
 }else{
-
-$base=mysql_select_db('prueba');
+$base=mysql_select_db('consumoelectrico');
 if(!$base){
 echo"No Se Encontro La Base De Datos";
 }
